@@ -2,8 +2,8 @@ node_modules/
 dist/
 allure-results/
 allure-report/
-reports/logs/
-.env
+reports/
 *.log
 .github/
+
 

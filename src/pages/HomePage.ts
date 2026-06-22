@@ -22,7 +22,7 @@ export class HomePage extends BasePage {
 
   async goto(): Promise<void> {
     logger.info('Navigating to ParaBank home page');
-    await this.navigateTo('/index.htm?ConnType=JDBC');
+    await this.navigateTo(process.env.HOME_PAGE!);
   }
 
   async clickRegisterLink(): Promise<void> {

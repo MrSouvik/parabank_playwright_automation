@@ -3,7 +3,7 @@ import { logger } from '../utils/logger';
 
 export abstract class BasePage {
   protected readonly page: Page;
-  protected readonly baseUrl: string = 'https://parabank.parasoft.com/parabank';
+  protected readonly baseUrl: string = process.env.APP_URL!;
 
   constructor(page: Page) {
     this.page = page;
