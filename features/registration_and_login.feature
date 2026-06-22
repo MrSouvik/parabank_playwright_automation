@@ -19,8 +19,6 @@ Feature: ParaBank User Registration and Login
 
   @login @smoke
   Scenario: Successful login with the registered user account
-    # When a new user has been registered with random credentials
-    # Then I logged out from the application
     When I log in with the registered user credentials
     Then I should be logged in successfully
     And I should see the account overview page
